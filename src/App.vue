@@ -42,7 +42,7 @@ export default {
   }
 
   .toolbar-logo, .toolbar-actions {
-    margin-left: 40px;
+    margin-left: 44px;
     display: flex;
     justify-content: flex-start;
     &__circle {
@@ -52,7 +52,7 @@ export default {
       background: #ffffff;
     }
     &__text {
-      margin-left: 20px;
+      margin-left: 12px;
       color: #ffffff;
       font-family: Roboto;
       font-size: 16px;
@@ -60,15 +60,13 @@ export default {
   }
 
   .btn_already-user {
-    width: 124px;
-    font-family: Gotham;
+    width: 10px;
     font-size: 16px;
   }
 
   .btn_login {
     width: 46px;
     margin-left: 8px;
-    font-family: Gotham;
-    font-size: 16px;
+    font-size: 18px;
   }
 </style>

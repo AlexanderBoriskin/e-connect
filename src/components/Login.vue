@@ -3,7 +3,7 @@
     <div class="login-page__above-body">
       <div class="e-connect-circle"></div>
       <div class="e-connect-text">
-        EConnect
+        <p>EConnect</p>
       </div>
     </div>
     <v-card class="login-page__card">
@@ -52,8 +52,9 @@ export default {
   .login-page {
 
     &__above-body {
+      width: 250px;
       height: 40px;
-      margin-top: 44px;
+      margin-top: 20px;
       margin-bottom: 56px;
       display: flex;
       justify-content: flex-start;
@@ -65,10 +66,15 @@ export default {
       }
 
       .e-connect-text {
-        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 27px;
         color: #9b9b9b;
         font-family: Roboto;
         font-size: 32px;
+        p {
+          margin: 0;
+        }
       }
     }
 
@@ -79,26 +85,39 @@ export default {
 
     &__body {
       width: 471px;
-      padding: 40px 100px;
+      padding: 43px 100px 36px 100px;
 
       .linkedin-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 44px;
+        border-radius: 6px;
         &__text {
           width: 146px;
           text-align: left;
         }
 
         &__icon {
-          margin-left: 33.5px;
+          margin-left: 37.5px;
+          margin-bottom: 2px;
         }
 
         .v-btn__content {
           justify-content: flex-start !important;
-          padding-left: 24.5px;
+          padding-left: 25.5px;
+          font-size: 16.5px;
         }
       }
 
       .login-btn {
-        margin-top: 17px !important;
+        height: 44px;
+        margin-top: 18px !important;
+        border-radius: 6px;
+
+        .v-btn__content {
+          padding-left: 2.5px;
+          font-size: 16.5px;
+        }
       }
 
       .v-text-field {
@@ -111,17 +130,20 @@ export default {
           }
         }
         &__slot {
+          height: 42px;
           border: 2px solid #ececec;
+          border-radius: 6px;
           .v-label {
-            margin-left: 15.4px;
+            margin-left: 15px;
+            line-height: 25px;
             color: #9b9b9b;
-            font-family: Gotham;
             font-size: 14px;
           }
         }
       }
 
       .text_or {
+        font-size: 16px;
         padding: 47px 0;
       }
       .text_forgot-password {
@@ -134,7 +156,6 @@ export default {
         height: 29px;
         margin-top: 54px;
         margin-bottom: 42px;
-        font-family: Gotham;
         font-size: 24px;
         color: #4a4a4a;
       }
